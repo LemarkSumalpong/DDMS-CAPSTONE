@@ -1,0 +1,38 @@
+{% load i18n %}
+
+{% block subject %}
+  {% blocktrans %}USTP - Request Form Update{% endblocktrans %}
+{% endblock %}
+
+{% block text_body %}
+  {% blocktrans %}You're receiving this email because your request form has been {{ request_status }}.{% endblocktrans %}
+
+  {% blocktrans %}Remarks: {{ remarks }}{% endblocktrans %}
+
+  {% trans 'Please visit the site to check your request:' %}
+  {{ url|safe }}
+
+  {% trans 'For hardcopy requests, please proceed to the USTP office to avail of your requested copies. Hardcopy requests are valid only within 1 month of requesting.' %}
+{% endblock %}
+
+{% block html_body %}
+  <p>
+    {% blocktrans %}You're receiving this email because your request form has been {{ request_status }}.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}Remarks {{ remarks }}{% endblocktrans %}
+  </p>
+
+  <p>
+    {% trans 'Please visit the site to check your request:' %}
+  </p>
+
+  <p>
+    <a href="{{ url|safe }}"></a>
+  </p>
+
+  <p>
+    {% trans 'For hardcopy requests, please proceed to the USTP office to avail of your requested copies. Hardcopy requests are valid only within 1 month of requesting.' %}
+  </p>
+{% endblock %}

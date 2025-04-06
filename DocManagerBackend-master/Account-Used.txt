@@ -1,0 +1,20 @@
+Accounts Used:
+Admin
+email: admin@test.com
+password: TQ%q3YyMw3D8@a
+
+Head
+email: head@test.com
+password: TQ%q3YyMw3D8@a
+
+Staff
+email: staff@test.com
+password: TQ%q3YyMw3D8@a
+
+Planning
+email: planning@test.com
+password: TQ%q3YyMw3D8@a
+
+Client
+email: client@test.com
+password: TQ%q3YyMw3D8@a
